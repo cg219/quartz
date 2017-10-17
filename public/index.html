@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Quartz Page</title>
+  <link rel="stylesheet" href="http://vjs.zencdn.net/6.2.8/video-js.css">
+  <link rel="stylesheet" href="css/main.styles.css">
+</head>
+
+<body>
+  <section class="carousel">
+    <div class="wrapper">
+      <ul class="carousel__slider">
+        <li class="carousel__slider-slide"><img src="http://fpoimg.com/1920x1080?text=Image 1&bg_color=454545&text_color=a6a6a6" alt="Image 1"></li>
+        <li class="carousel__slider-slide"><img src="http://fpoimg.com/1920x1080?text=Image 2&bg_color=340f0f&text_color=a6a6a6" alt="Image 2"></li>
+        <li class="carousel__slider-slide"><img src="http://fpoimg.com/1920x1080?text=Image 3&bg_color=1c4f2e&text_color=a6a6a6" alt="Image 3"></li>
+      </ul>
+    </div>
+  </section>
+  <section class="player">
+    <div class="wrapper">
+      <video id="video-player" class="video-js vjs-default-skin vjs-big-play-centered player__video"
+        controls="true" preload="auto" data-setup="{fluid: true}" width="1920" height="1080">
+        <source src="http://dev.kreativeking.com/temp/717956081.mp4" type="video/mp4">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+      </video>
+    </div>
+  </section>
+  <section class="editorial">
+    <div class="wrapper editorial__wrapper">
+      <img src="http://fpoimg.com/300x250?text=Preview&bg_color=454545&text_color=a6a6a6" alt="" class="editorial__image">
+      <p class="editorial__text">Nulla fermentum lacinia tincidunt. Cras tristique congue velit, ut porttitor leo tempor et. Suspendisse potenti. Nam in leo maximus, lacinia leo ac, bibendum sem. Duis pellentesque quam non nisl lobortis imperdiet. Ut sollicitudin ullamcorper leo, nec ultricies mauris sagittis eu. Donec aliquam elit a blandit elementum. Suspendisse potenti. Praesent a sodales enim. Aenean felis ante, finibus at convallis in, volutpat in nulla. Nunc dapibus et orci eu ullamcorper. Fusce tempus sapien a lorem commodo tincidunt. Donec tellus purus, pellentesque sed facilisis ac, consectetur non ante. Etiam ut viverra ipsum.</p>
+    </div>
+  </section>
+
+  <script src="js/main.bundle.js"></script>
+</body>
+</html>

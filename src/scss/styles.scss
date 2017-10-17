@@ -1,0 +1,87 @@
+@import "~normalize.css";
+
+$desktop: "(min-width: 769px)";
+// $mobile: "(max-width: 768px)";
+
+body {
+  background: #efefef;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @media #{$desktop} {
+    max-width: 1280px;
+    padding: 30px 5%;
+  }
+}
+
+.editorial {
+  background: #CDCDCD;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$desktop} {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    flex: 0 1 auto;
+    display: block;
+    width: 300px;
+    padding: 10px 0 0;
+  }
+
+  &__text {
+    padding: 10px;
+
+    @media #{$desktop} {
+      width: 50%;
+    }
+  }
+}
+
+.player {
+  background: #346d81;
+
+  &__video {
+    width: 100%;
+  }
+}
+
+.carousel {
+  background: #224652;
+
+  &__slider { 
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+  &__slider-slide {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
